@@ -4,36 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=h, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&display=swap" rel="stylesheet">
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="weather-app">
         <div class="row">
-          <div class="col-6">
-      <h2>
-        city
-      </h2>
-      <h4>
-        friday 11:00 <br/>
-        description
-      </h4>
+          <div class="city-info">
+            <h2>
+              city
+            </h2>
+            <h4>
+              friday 11:00 <br/>
+              description
+            </h4>
+          </div>
+          <div class="city-temperature">
+            <span class="emoji">☁️</span>
+            <span class="temperature" id="cityTemperature">0</span>
+            <span class="units"><a href="#" id="celsius">°C</a> | <a href="#" id="fahrenheit">°F</a></span>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
-      <h1>🌤 0°</h1>
-      </div>
-      </div>
-      </div>
-      <small>
-        <a href="https://github.com/Shierhier/vanilla-weather-app" target="_blank">Open-source code</a>
-      </small>
     </div>
     <script src="src/index.js"></script>
   </body>
+  <p id="open-source-link">
+    <a href="https://github.com/Shierhier/vanilla-weather-app" target="_blank">Open-source code</a>
+  </p>
 </html>
