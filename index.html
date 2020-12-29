@@ -12,27 +12,28 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="weather-app">
-        <div class="row">
           <div class="city-info">
-            <h2>
+            <h2 id="city">
               city
             </h2>
-            <h4>
-              friday 11:00 <br/>
+            <h4 id="date">
+              friday 11:00
+            </h4>
+            <h4 id="description">
               description
             </h4>
           </div>
           <div class="city-temperature">
             <span class="emoji">☁️</span>
-            <span class="temperature" id="cityTemperature">0</span>
+            <span class="temperature" id="temperature">0</span>
             <span class="units"><a href="#" id="celsius">°C</a> | <a href="#" id="fahrenheit">°F</a></span>
           </div>
-        </div>
       </div>
     </div>
     <script src="src/index.js"></script>
