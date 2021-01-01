@@ -9,14 +9,13 @@ p {
 h2 {
   font-weight: 400;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 48px;
   margin: 0;
 }
 
 h4 {
   font-weight: 200;
   font-size: 20px;
-  line-height: 28px;
   text-transform: capitalize;
 }
 
@@ -36,7 +35,41 @@ small {
 .weather-app {
   margin: 30px auto;
   padding: 20px;
-  background-color: rgba(20, 20, 20, 0.1);
+  background-color: rgba(20, 20, 20, 0.2);
+}
+
+.search {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#city-input {
+  background: #ffff;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+::placeholder {
+  font-size: 13px;
+  color: rgba(116, 115, 115, 0.493);
+  padding-left: 5px;
+}
+
+input#city-input {
+  height: 24px;
+  font-size: 13px;
+  color: #f05454;
+  padding-left: 10px;
+}
+
+#search-button {
+  color: #fff;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  padding: 5px, 20px;
+  outline: none;
 }
 
 .city-info {
