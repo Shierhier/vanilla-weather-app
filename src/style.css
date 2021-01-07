@@ -4,20 +4,22 @@ h3,
 h4,
 p {
   font-family: "Raleway", sans-serif;
-  color: #fff;
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 36px;
   line-height: 48px;
   margin: 0;
+  color: #ff4800;
 }
 
 h4 {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 20px;
   text-transform: capitalize;
+  color: #5e6472;
 }
 
 h1 {
@@ -31,12 +33,21 @@ small {
 
 .container {
   background-image: url(https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
+  background: linear-gradient(
+      135deg,
+      rgba(245, 247, 250, 0) 0%,
+      rgba(195, 207, 226) 100%
+    ),
+    url("undraw_walking_outside_5ueb.svg") no-repeat;
+
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 1px rgba(32, 32, 32, 0.1);
 }
 
 .weather-app {
   margin: 30px auto;
   padding: 20px;
-  background-color: rgba(20, 20, 20, 0.3);
+  background-color: rgba(20, 20, 20, 0);
 }
 
 .search {
@@ -49,6 +60,7 @@ small {
   border: none;
   border-radius: 20px;
   outline: none;
+  box-shadow: 5px 5px 20px 1px rgba(12, 32, 12, 0.05);
 }
 
 ::placeholder {
@@ -60,7 +72,7 @@ small {
 input#city-input {
   height: 24px;
   font-size: 13px;
-  color: #f05454;
+  color: #ff4800;
   padding-left: 10px;
 }
 
@@ -71,6 +83,7 @@ input#city-input {
   border-radius: 20px;
   padding: 5px, 20px;
   outline: none;
+  box-shadow: 5px 5px 20px 1px rgba(12, 32, 12, 0.05);
 }
 
 .city-info {
@@ -80,15 +93,16 @@ input#city-input {
 
 .city-temperature {
   text-align: right;
-  padding-bottom: 50px;
   padding-right: 50px;
 }
 
 .emoji {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 150px;
+  font-size: 50px;
   font-weight: 800;
+  position: relative;
+  top: -30px;
 }
 
 .temperature {
@@ -117,13 +131,14 @@ input#city-input {
 }
 
 .col-2 {
-  background: #fff;
-  border-radius: 2px;
+  background: rgb(255, 255, 255, 0.8);
+  border-radius: 5px;
   margin-right: 15px;
+  box-shadow: 5px 5px 20px 1px rgba(12, 32, 12, 0.05);
 }
 
 .weather-forecast h3 {
-  color: #12121d;
+  color: #5e6472;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
@@ -140,7 +155,7 @@ input#city-input {
 }
 
 .weather-forecast p {
-  color: #12121d;
+  color: #5e6472;
   text-align: center;
 }
 
@@ -151,6 +166,10 @@ a#celsius {
   text-decoration-color: #fff;
 }
 
+#celsius:hover {
+  color: #ff4800;
+}
+
 a#fahrenheit {
   color: #fff;
   text-decoration: none;
@@ -158,8 +177,28 @@ a#fahrenheit {
   text-decoration-color: #fff;
 }
 
+#fahrenheit:hover {
+  color: #ff4800;
+}
+
 #open-source-link {
   font-size: 10px;
-  padding-top: 5px;
   text-align: center;
+}
+
+#forecast {
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+a:link {
+  color: rgba(116, 115, 115, 0.493);
+}
+
+a:visited {
+  color: rgba(116, 115, 115, 0.493);
+}
+
+a:hover {
+  color: #ff4800;
 }
